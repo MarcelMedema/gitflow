@@ -59,20 +59,50 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: slateblue;
+  color: #222222;
 }
 
 .hero {
+  display: flex;
   width: 100%;
-  height: 60vh;
-  background-color: blue;
+  height: 40vh;
+  background-color: #37718e;
+  justify-content: center;
+  align-items: center;
 }
 .hero .heroTitle h3 {
-  color: red;
+  color: #254e70;
 }
 
 .color_blue {
-  background-color: rgb(73, 131, 217);
+  background-color: #8ee3ef;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.articles .article {
+  background-color: white;
+  border-radius: 1rem;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+.articles .article .articleImage {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.articles .article .articleImage img {
+  max-width: 100%;
+}
+.articles .article .articleContent {
+  padding: 1rem;
+  color: #222222;
 }
 
 /*# sourceMappingURL=style.css.map */
